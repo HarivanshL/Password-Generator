@@ -23,7 +23,7 @@ def main():
 
 
 #Function to handle password generator
-def generate_pass(special_chars: list, numbers: list, letters: list):
+def generate_pass(special_chars: list, numbers: list, letters: list) -> str:
     pass_list = []
     
 
@@ -38,6 +38,7 @@ def generate_pass(special_chars: list, numbers: list, letters: list):
     for x in pass_list:
         shuffled_password += x
     print(shuffled_password)
+    return shuffled_password
 
 if __name__ == '__main__':
     main()
